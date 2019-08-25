@@ -29,7 +29,7 @@
                 <button id="submit" class="btn btn-outline-default purple btn-block btn-round">Enviar</button>
                 <button id="loading" class="btn btn-outline-default orange btn-block btn-round hidden" disabled><i class="fas fa-spinner fa-spin"></i>  Carregando...</button>
                 <button id="finish" class="btn btn-outline-success btn-block btn-round hidden"><i class="fas fa-check animated slideInDown"></i></button>
-                <small>Não possui conta? Cadastre-se agora <a href="#">clicando aqui</a></small>
+                <small>Não possui conta? Cadastre-se agora <a href="../register/register.php">clicando aqui</a></small>
             </div>
         </div>
     </div>
