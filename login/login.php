@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login - Crud Commerce</title>
+    <title>Hyped Store</title>
     <?php include ('../asset/includes/links.php');?>
     <link rel="stylesheet" href="login.css">
 </head>
@@ -12,7 +12,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 card-login">
-                <h1 class="center txt-purple">Crud Commerce</h1>
+                <h1 class="center txt-purple">Hyped Store</h1>
                 <form id="form-login">
                     <div class="form-group">
                         <label for="input-email">Email: </label>
