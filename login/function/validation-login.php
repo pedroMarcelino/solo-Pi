@@ -4,8 +4,12 @@
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    if($email != "" || $password != ""){
-
+    if($email == "" || $password == ""){
+         $array = array(
+            "return" => "502" ,
+        );
+        echo json_encode($array);
+    }else{
         $sql = $conn->prepare("SELECT * FROM user WHERE email = '$email'");
         $sql->execute();
         $count =  $sql->rowCount();
@@ -33,10 +37,4 @@
             );
             echo json_encode($array);
         }
-
-    }else{
-        $array = array(
-            "return" => "502" ,
-        );
-        echo json_encode($array);
     }

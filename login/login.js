@@ -98,14 +98,14 @@ function send_ajax() {
             $("#loading").attr("class", "btn btn-outline-defalt orange btn-block btn-round");
         },
         success: function (data) {
-            if(data.return){
+            if(data.return == true){
                 // se tudo ir certo com email e senha é redirecionado
                 $("#loading").attr("class", "btn btn-outline-defalt orange btn-block btn-round hidden");
                 $("#finish").attr("class", "btn btn-outline-success btn-block btn-round");
                 setTimeout(function(){ 
                     $(location).attr('href', '../index/index.php');
                 }, 1400);
-            }else{
+            }else if(data.return == false){
                 // cado a senha esteja errada
                 swal("Oops!", "Senha errada, digite digite novamente!", "warning");
                 $("#input-password").val("");
@@ -117,7 +117,7 @@ function send_ajax() {
 
             if(data.return == "user_not_found"){
                 // caso nao encontre nehum usuario
-                swal("Oops!", "Nenhum usuario cadastrado, se registre!", "error");
+                swal("Oops!", "Nenhum usuario cadastrado, se registre!", "warning");
                 $("#input-email").val("");
                 $("#input-password").val("");
                 $("#input-email").css("border-bottom", "1px solid #e22020");
@@ -127,6 +127,17 @@ function send_ajax() {
                 $("#submit").attr("class", "btn btn-outline-default purple btn-block btn-round");
                 $("#loading").attr("class", "btn btn-outline-defalt orange btn-block btn-round hidden");
 
+            }
+            if(data.return == "502"){
+                swal("502!", "Erro ao enviar os dados!", "error");
+                $("#input-email").val("");
+                $("#input-password").val("");
+                $("#input-email").css("border-bottom", "1px solid #e22020");
+                $("#input-password").css("border-bottom", "1px solid #e22020");
+                $("#small-email").attr("class", "text-danger");
+                $("#small-password").attr("class", "text-danger");
+                $("#submit").attr("class", "btn btn-outline-default purple btn-block btn-round");
+                $("#loading").attr("class", "btn btn-outline-defalt orange btn-block btn-round hidden");
             }
         },
         complete: function () {
