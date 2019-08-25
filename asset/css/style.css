@@ -1,0 +1,52 @@
+body{
+    font-family: 'Livvic', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+.form-control{
+    border-color: transparent;
+    border-bottom: 1px solid black;
+    box-shadow: none;
+   
+}
+
+.form-control:focus{ 
+    box-shadow: none;
+    border: transparent;
+    border-bottom: 1px solid black;
+}
+
+.btn-round{
+    border-radius: 50px;
+}
+
+.hidden{
+    display: none;
+    visibility: hidden;
+}
+
+.purple{
+    color: #a51dce;
+    border-color: #a51dce;
+}
+
+.purple:hover{
+    background: #a51dce;
+    color: #ffffff;
+}
+
+.orange{
+    color: #ff8800;
+    border-color: #ff8800;
+}
+
+.orange:hover{
+    color: #ff8800;
+    border-color: #ff8800;
+}
+
+.center{
+    text-align: center;
+}
