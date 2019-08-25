@@ -2,7 +2,7 @@
 <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
 
 <!-- icons font awesome -->
-<script src="https://kit.fontawesome.com/ca8fa5c6df.js"></script>
+<link href="../asset/icons/css/all.css" rel="stylesheet">
 
 <!-- bootstrap css -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
