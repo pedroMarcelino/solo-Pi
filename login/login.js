@@ -91,7 +91,6 @@ function send_ajax() {
         type: 'POST',
         dataType: 'json',
         url: 'function/validation-login.php',
-        async: true,
         data: dados,
         beforeSend: function () {
             $("#submit").attr("class", "btn btn-outline-default purple btn-block btn-round hidden");
