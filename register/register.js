@@ -1,7 +1,12 @@
 $(function () {
-    $("#submit").on("click", function () {
-        console.log(validation_fields());
+    
+    $("#form-register").keypress(function (e) {
+        
     });
+    $("#submit").on("click", function () {
+        
+    });
+    
 });
 
 //valida se os campos estão nulos
