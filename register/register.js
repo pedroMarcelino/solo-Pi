@@ -70,9 +70,6 @@ function validation_fields() {
     } else {
         return false;
     }
-
-
-
 }
 
 //valida se as senhas estao iguais
