@@ -4,7 +4,29 @@ $(function () {
         
     });
     $("#submit").on("click", function () {
-        
+        console.table(validation_fields());
+    });
+
+    $("#input-name").keypress(function () {
+        $("#input-name").css("border-bottom", "1px solid #000000");
+        $("#small-name").attr("class", "text-danger hidden");
+    });
+
+    $("#input-email").keypress(function () {
+        $("#input-email").css("border-bottom", "1px solid #000000");
+        $("#small-email").attr("class", "text-danger hidden");
+        $("#check-email").attr("class", "text-danger hidden");
+    });
+
+    $("#input-password").keypress(function () {
+        $("#input-password").css("border-bottom", "1px solid #000000");
+        $("#small-password").attr("class", "text-danger hidden");
+    });
+
+    $("#input-conf-password").keypress(function () {
+        $("#input-conf-password").css("border-bottom", "1px solid #000000");
+        $("#small-conf-password").attr("class", "text-danger hidden");
+        $("#different-password").attr("class", "text-danger hidden");
     });
     
 });
@@ -14,28 +36,33 @@ function validation_fields() {
     var i = 0;
 
     if ($("#input-name").val() != "") {
-        i += 1;
+        i++;
     } else {
-        i += 0;
+        $("#input-name").css("border-bottom-color", "#e22020");
+        $("#small-name").attr("class", "text-danger");
     }
 
 
     if ($("#input-email").val() != "") {
-        i += 1;
+        i++;
     } else {
-        i += 0;
+        $("#input-email").css("border-bottom-color", "#e22020");
+        $("#small-email").attr("class", "text-danger");
+        
     }
 
     if ($("#input-password").val() != "") {
-        i += 1;
+        i++;
     } else {
-        i += 0;
+        $("#input-password").css("border-bottom-color", "#e22020");
+        $("#small-password").attr("class", "text-danger");
     }
 
     if ($("#input-conf-password").val() != "") {
-        i += 1;
+        i++;
     } else {
-        i += 0;
+        $("#input-conf-password").css("border-bottom-color", "#e22020");
+        $("#small-conf-password").attr("class", "text-danger");
     }
 
     if (i == 4) {
