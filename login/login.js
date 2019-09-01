@@ -138,9 +138,6 @@ function send_ajax() {
                 $("#submit").attr("class", "btn btn-outline-default purple btn-block btn-round");
                 $("#loading").attr("class", "btn btn-outline-defalt orange btn-block btn-round hidden");
             }
-        },
-        complete: function () {
-
         }
     });
 
