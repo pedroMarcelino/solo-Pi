@@ -34,7 +34,7 @@
                         <label for="input-password">Confirma a senha:</label>
                         <input type="password" class="form-control" id="input-conf-password" placeholder="********">
                         <small id="small-conf-password" class="text-danger hidden">Preencha esse campo!</small>
-                        <small id="different-password" class="text-danger hidden">Senhas difentes!</small>
+                        <small id="different-password" class="text-danger hidden">Senhas diferentes!</small>
                     </div>
                 </form>
                 <button id="submit" class="btn btn-outline-default purple btn-block btn-round">Enviar</button>

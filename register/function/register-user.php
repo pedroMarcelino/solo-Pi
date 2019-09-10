@@ -5,7 +5,7 @@
 
     include('../../asset/includes/conection.php');
 
-    $sql = $conn->prepare("INSERT INTO user(cd_user, nm_user, email, password) VALUES (null, '$nome', '$email', '$password')");
+    $sql = $conn->prepare("INSERT INTO user(cd_user, nm_user, email, pass) VALUES (null, '$nome', '$email', '$password')");
     $return = $sql->execute();
 
     if($return == TRUE){

@@ -17,7 +17,7 @@
         $ret = $sql->fetch(PDO::FETCH_OBJ);
 
         if($count > 0) {
-            if($email == $ret->email && $password == $ret->password){
+            if($email == $ret->email && $password == $ret->pass){
                 session_start();
                 $_SESSION['cod'] = $ret->cd_user;
 
