@@ -119,7 +119,7 @@ function register_ajax() {
     var dados = {
         "name": $("#input-name").val(),
         "email": $("#input-email").val(),
-        "password": $("#input-password").val(),
+        "pass": $("#input-password").val(),
     }
 
     $.ajax({
